@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Monitoring Screen</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.3/jquery.min.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+  <script src="https://www.atlasestateagents.co.uk/javascript/tether.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <style>
+  body {
+      font: 20px Montserrat, sans-serif;
+      line-height: 1.8;
+      background-color: #f1f4f5;
+  }
+  .panel-header h4 {
+    float: left;
+    margin:20px 30px 0px;
+  }
+  .panel-header div {
+    float: right;
+    margin:20px 40px 0px;
+  }
+  .row p {
+    text-align: left;
+    margin: 20px 10px 20px 40px;
+    font-size: 16px;
+  }
+  .panes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .panes-container .pane {
+    background-color: white;
+    width: calc(50% - 30px);
+    margin: 15px;
+    height: 300px;
+    overflow: hidden;
+  }
+
+  .panes-container.expanded .pane.primary {
+    background-color: white;
+    order: -1;
+    width: calc(100% - 50px);
+    margin: 25px;
+    height: 600px;
+  }
+
+  .panes-container.expanded .pane {
+    background-color: white;
+    width: calc(20% - 20px);
+    margin: 10px;
+    height: 300px;
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .panes-container .pane .btn-focus {
+    background: url(./img/ico_maximize.jpg);
+    height: 23px;
+    width: 24px;
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .panes-container.expanded .pane .btn-focus {
+    background: url(./img/ico_maximize.jpg);
+    height: 23px;
+    width: 24px;
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .panes-container.expanded .pane.primary .btn-focus {
+    background: url(./img/ico_minimize.jpg);
+    height: 23px;
+    width: 24px;
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .panes-container .pane .btn-focus {
+    background: url(./img/ico_maximize.jpg);
+    height: 23px;
+    width: 24px;
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .panes-container .btn-close {
+    background: url(./img/ico_close.jpg);
+    height: 23px;
+    width: 24px;
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .action {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  </style>
+</head>
+<body>
+
+<!-- First Container -->
+
+<div class="container-fluid text-center panes-container">
+  
+  <div class="panel panel-default pane">
+    <div class="panel-header row">
+      <h4>Panel A</h4>
+      <div>
+        <a href="#" class="btn-focus"></a>
+        <a href="#" class="btn-close"></a>
+      </div>
+    </div>
+    <div class="row">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+  </div>
+
+  <div class="panel panel-default pane">
+    <div class="panel-header row">
+      <h4>Panel B</h4>
+      <div>
+        <a href="#" class="btn-focus"></a>
+        <a href="#" class="btn-close"></a>
+      </div>
+    </div>
+    <div class="row">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+  </div>
+
+  <div class="panel panel-default pane">
+    <div class="panel-header row">
+      <h4>Panel C</h4>
+      <div>
+        <a href="#" class="btn-focus"></a>
+        <a href="#" class="btn-close"></a>
+      </div>
+    </div>
+    <div class="row">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+  </div>
+
+  <div class="panel panel-default pane">
+    <div class="panel-header row">
+      <h4>Panel D</h4>
+      <div>
+        <a href="#" class="btn-focus"></a>
+        <a href="#" class="btn-close"></a>
+      </div>
+    </div>
+    <div class="row">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+  </div>
+
+  <div class="panel panel-default pane">
+    <div class="panel-header row">
+      <h4>Panel E</h4>
+      <div>
+        <a href="#" class="btn-focus"></a>
+        <a href="#" class="btn-close"></a>
+      </div>
+    </div>
+    <div class="row">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+  </div>
+
+  <div class="panel panel-default pane">
+    <div class="panel-header row">
+      <h4>Panel F</h4>
+      <div>
+        <a href="#" class="btn-focus"></a>
+        <a href="#" class="btn-close"></a>
+      </div>
+    </div>
+    <div class="row">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+  </div>
+  
+</div>
+
+
+<div class="col-sm-2 container-one-max-panel">
+</div>
+</body>
+</html>
